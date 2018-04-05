@@ -1,0 +1,7 @@
+{
+	"name": "Sample Block",
+	"description": "A Sample Salesforce Marketing Cloud Content Builder Custom Block",
+	"repository": "https://github.com/tbesluau/sampleblock",
+	"logo": "https://node-js-sample.herokuapp.com/node.png",
+	"keywords": ["node", "express", "static", "content builder", "block", "blocksdk"]
+}
