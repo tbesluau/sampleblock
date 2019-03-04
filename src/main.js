@@ -1,7 +1,7 @@
 require('../node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css');
 
 var SDK = require('blocksdk');
-var sdk = new SDK();
+var sdk = new SDK(null, null, true); // 3rd argument true bypassing https requirement: not prod worthy
 
 var address, width, height, zoom, link, mapsKey;
 
@@ -26,7 +26,7 @@ function paintSettings () {
 	document.getElementById('slider-id-01').value = width;
 	document.getElementById('slider-id-02').value = height;
 	document.getElementById('slider-id-03').value = zoom;
-} 
+}
 
 function paintSliderValues () {
 	document.getElementById('slider-id-01-val').innerHTML = document.getElementById('slider-id-01').value;
